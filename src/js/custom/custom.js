@@ -1,3 +1,9 @@
+
+$('#anim').fadeIn(1500) //wait3 1.5 s.
+    .show(1000);
+
+
+
 var emailList = [];
 //console.log(emailList);
 function validateForm() {
@@ -9,8 +15,8 @@ function validateForm() {
        console.log("Not a valid e-mail address");
         return false;
     }else{
-       alert("yes");
-       alert(x);
+        console.log("yes");
+        console.log(x);
 
 
 
@@ -19,5 +25,3 @@ function validateForm() {
 
 
 
-$('#anim').fadeIn(1500) //wait3 1.5 s.
-    .show(1000);
