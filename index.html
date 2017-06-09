@@ -18,9 +18,9 @@
     <![endif]-->
 
 </head>
-<body>
+<body  >
 
-<header>
+<header >
 
     <div class="container">
 
@@ -59,10 +59,10 @@
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                         </p>
                     </div>
-                    <div class="input-group">
-                        <input type="email" class="form-email" placeholder="Enter your email" >
-                        <button class="input-group-addon">Subscribe for news</button>
-                    </div>
+                    <form class="input-group" name="myForm" onsubmit="return validateForm();" method="post">
+                        <input name='email' type="email" class="form-email" placeholder="Enter your email" >
+                        <button class="input-group-addon " id="submit" >Subscribe for news</button>
+                    </form>
 
 
 
