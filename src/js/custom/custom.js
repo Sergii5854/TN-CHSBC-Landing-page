@@ -2,29 +2,8 @@
 $('#anim').fadeIn(1500) //wait3 1.5 s.
     .show(1000);
 
-function readTextFile(file)
-{
-    var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file, false);
-    rawFile.onreadystatechange = function ()
-    {
-        if(rawFile.readyState === 4)
-        {
-            if(rawFile.status === 200 || rawFile.status == 0)
-            {
-                var allText = rawFile.responseText;
-               // alert(allText);
-            }
-        }
-    }
-    rawFile.send(null);
-}
-var emailList =  readTextFile("emailList.txt");
-//alert(ss);
 
 
-var emails = [];
-console.log(emails);
 function validateForm() {
     var x = document.forms["myForm"]["email"].value;
     var atpos = x.indexOf("@");
@@ -37,13 +16,29 @@ function validateForm() {
 
         var email =  document.getElementsByTagName("input")[0].value;
         var emails = [];
-        emails.push(email);
-        console.log(emails);
-        alert(email);
+        email.push(emails);
         alert(emails);
+
+        document.writeln("color:mediumblue">"Mail send");
+
+
 
 
     }
 }
+function myFunction() {
 
 
+    var email =  document.getElementsByClassName("form-email")[0].value;
+
+
+    alert(email);
+
+    var fso  = new ActiveXObject("Scripting.FileSystemObject");
+    alert(fso);
+    var fh = fso.CreateTextFile("emailList", true);
+    alert(fh);
+    fh.WriteLine("Some text goes here...");
+    alert( fh.WriteLine("Some text goes here..."));
+    fh.Close();
+}
