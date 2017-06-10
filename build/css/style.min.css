@@ -17427,3 +17427,495 @@ body.modal-open {
   -webkit-animation: fade_move_down 2s ease-in-out infinite;
   animation: fade_move_down 2s ease-in-out infinite;
 }
+
+.project {
+  margin: 0;
+  padding: 0;
+  height: 858px;
+}
+
+.project .container {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.project .main-content {
+  max-width: 944px;
+  position: relative;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  left: 50%;
+  height: 100vh;
+}
+
+.project .main-content .header-section {
+  max-width: 1440px;
+}
+
+.project .main-content .header-section .logo {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 200px;
+}
+
+.project .main-content .header-section .nav {
+  position: absolute;
+  display: block;
+  top: 40px;
+  right: 80px;
+}
+
+.project .main-content .header-section .nav .menu {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.project .main-content .title {
+  color: #262626;
+  font-family: "Century Gothic";
+  font-size: 45px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 128px 15px 39px 15px;
+}
+
+.project .main-content .textarea {
+  max-width: 780px;
+  color: #262626;
+  font-family: "Century Gothic";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 33px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 15px 95px 15px;
+}
+
+@media (max-width: 850px) {
+  .project .main-content .textarea {
+    padding: 0 15px 55px 15px;
+  }
+}
+
+.project .main-content .wraper-img {
+  width: 100%;
+  max-width: 944px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.project .main-content .wraper-img .wraper {
+  width: 20%;
+  float: left;
+}
+
+@media (max-width: 550px) {
+  .project .main-content .wraper-img .wraper {
+    width: auto;
+  }
+}
+
+.project .main-content .wraper-img .wraper .icon {
+  text-align: center;
+  height: 100px;
+  vertical-align: middle;
+}
+
+@media (max-width: 850px) {
+  .project .main-content .wraper-img .wraper .icon {
+    max-width: 50%;
+  }
+}
+
+.project .main-content .wraper-img .wraper .title-icon {
+  color: #262626;
+  font-family: "Century Gothic";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 20px;
+}
+
+@media (max-width: 850px) {
+  .project .main-content .wraper-img .wraper .title-icon {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  .project .main-content .wraper-img .wraper .title-icon {
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+
+.project .main-content .bottom-wrap {
+  position: absolute;
+  bottom: 0;
+  left: -10%;
+  width: 110%;
+}
+
+.project .main-content .bottom-wrap .bottom-img {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 110%;
+}
+
+.partners {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  height: 858px;
+}
+
+.partners .container {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+  margin: 0 auto;
+}
+
+.partners .main-content {
+  max-width: 944px;
+  height: 100vh;
+}
+
+.partners .main-content .logo {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 200px;
+}
+
+.partners .main-content .nav {
+  position: absolute;
+  display: block;
+  top: 40px;
+  right: 80px;
+}
+
+.partners .main-content .nav .menu {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.partners .main-content .title {
+  color: #262626;
+  font-family: "Century Gothic";
+  font-size: 45px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 128px 15px 39px 15px;
+}
+
+.partners .main-content .textarea {
+  max-width: 780px;
+  color: #262626;
+  font-family: "Century Gothic";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 33px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 15px 95px 15px;
+}
+
+.partners .main-content .wraper-img {
+  width: 100%;
+  max-width: 944px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.partners .main-content .wraper-img .wraper {
+  width: 20%;
+  float: left;
+}
+
+.partners .main-content .wraper-img .wraper .icon {
+  text-align: center;
+  height: 100px;
+  vertical-align: middle;
+}
+
+.partners .main-content .wraper-img .wraper .title-icon {
+  color: #262626;
+  font-family: "Century Gothic";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 20px;
+}
+
+.partners .main-content .bottom-wrap {
+  position: absolute;
+  bottom: 0;
+  left: -10%;
+  width: 110%;
+}
+
+.partners .main-content .bottom-wrap .bottom-img {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 110%;
+}
+
+.contact {
+  margin: 0;
+  padding: 0;
+  height: 858px;
+}
+
+.contact .container {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+  margin: 0 auto;
+}
+
+.contact .main-content {
+  max-width: 944px;
+  height: 100vh;
+}
+
+.contact .main-content .logo {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 200px;
+}
+
+.contact .main-content .nav {
+  position: absolute;
+  display: block;
+  top: 40px;
+  right: 80px;
+}
+
+.contact .main-content .nav .menu {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.contact .main-content .title {
+  color: #262626;
+  font-family: "Century Gothic";
+  font-size: 45px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 128px 15px 39px 15px;
+}
+
+.contact .main-content .textarea {
+  max-width: 780px;
+  color: #262626;
+  font-family: "Century Gothic";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 33px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 15px 95px 15px;
+}
+
+.contact .main-content .wraper-img {
+  width: 100%;
+  max-width: 944px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact .main-content .wraper-img .wraper {
+  width: 20%;
+  float: left;
+}
+
+.contact .main-content .wraper-img .wraper .icon {
+  text-align: center;
+  height: 100px;
+  vertical-align: middle;
+}
+
+.contact .main-content .wraper-img .wraper .title-icon {
+  color: #262626;
+  font-family: "Century Gothic";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 20px;
+}
+
+.contact .main-content .bottom-wrap {
+  position: absolute;
+  bottom: 0;
+  left: -10%;
+  width: 110%;
+}
+
+.contact .main-content .bottom-wrap .bottom-img {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 110%;
+}
+
+.goal {
+  margin: 0;
+  padding: 0;
+  height: 858px;
+}
+
+.goal .container {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+  margin: 0 auto;
+}
+
+.goal .main-content {
+  max-width: 944px;
+  height: 100vh;
+}
+
+.goal .main-content .logo {
+  max-width: 1440px !important;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 200px;
+}
+
+.goal .main-content .nav {
+  max-width: 1440px !important;
+  position: absolute;
+  display: block;
+  top: 40px;
+  right: 80px;
+}
+
+.goal .main-content .nav .menu {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.goal .main-content .title {
+  color: #262626;
+  font-family: "Century Gothic";
+  font-size: 45px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 128px 15px 39px 15px;
+}
+
+.goal .main-content .textarea {
+  max-width: 780px;
+  color: #262626;
+  font-family: "Century Gothic";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 33px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 15px 95px 15px;
+}
+
+.goal .main-content .wraper-img {
+  width: 100%;
+  max-width: 944px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.goal .main-content .wraper-img .wraper {
+  width: 33.333%;
+  float: left;
+}
+
+.goal .main-content .wraper-img .wraper .icon {
+  text-align: center;
+  height: 100px;
+  vertical-align: middle;
+}
+
+.goal .main-content .wraper-img .wraper .title-icon {
+  color: #262626;
+  font-family: "Century Gothic";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 20px;
+}
+
+.goal .main-content .wraper-img .wraper .description-icon {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.goal .main-content .bottom-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.goal .main-content .bottom-wrap .bottom-img {
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color .5s, opacity .5s;
+}
+
+a:focus {
+  outline: none;
+}
+
+.back-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.rect-outer {
+  position: relative;
+}
+
+.rect-outer .rect-inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}

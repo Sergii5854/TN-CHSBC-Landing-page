@@ -8,7 +8,8 @@
 
     <link rel="shortcut icon" href="img/favicon.png" type="image/png"/>
     <link href="build/css/style.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext"
+          rel="stylesheet">
 
     <title>Landing Page </title>
     <!--[if lte IE 9 ]>
@@ -18,9 +19,9 @@
     <![endif]-->
 
 </head>
-<body  >
+<body>
 
-<header >
+<header>
 
     <div class="container">
 
@@ -35,16 +36,20 @@
                 <img class="logo-small" src="img/2.png" alt="logo" type="image/png"/>
 
                 <div class="background-element">
-                    <img class="background-1" src=" img/Background_element.png" alt="Background element" type="image/png"/>
-                    <img class="background-2" src=" img/Background_element.png" alt="Background element" type="image/png"/>
-                    <img class="background-3" src=" img/Background_element.png" alt="Background element" type="image/png"/>
-                    <img class="background-4" src=" img/Background_element.png" alt="Background element" type="image/png"/>
+                    <img class="background-1" src=" img/Background_element.png" alt="Background element"
+                         type="image/png"/>
+                    <img class="background-2" src=" img/Background_element.png" alt="Background element"
+                         type="image/png"/>
+                    <img class="background-3" src=" img/Background_element.png" alt="Background element"
+                         type="image/png"/>
+                    <img class="background-4" src=" img/Background_element.png" alt="Background element"
+                         type="image/png"/>
                 </div>
 
                 <img class="background-img" src="img/rsz_woman-notebook-working-girl.jpg" alt="logo" type="image/png"/>
-               <div class="nav">
-                <img class="menu" src=" img/Menu.png" alt="menu" type="image/png"/>
-               </div>
+                <div class="nav">
+                    <img class="menu" src=" img/Menu.png" alt="menu" type="image/png"/>
+                </div>
                 <!--<video autoplay="" loop="" muted="" class="bgvideo">
 
                     <source src="video/Hello_BrainBasket.mp4">
@@ -58,14 +63,16 @@
 
                     <div class="textarea anim ">
                         <p>
-                            CS50 is a free online class introducing students to the basics of computer science. CS50 is taught by David Malan of Harvard
+                            CS50 is a free online class introducing students to the basics of computer science. CS50 is
+                            taught by David Malan of Harvard
                         </p>
                     </div>
-                    <form class="input-group" name="myForm" onsubmit="return validateForm();" method="POST" action="saver.php">
-                        <input name='email' type="email" class="form-email" placeholder="Enter your email" >
-                        <button class="input-group-addon " id="submit"  type="submit" >Subscribe for news</button>
+                    <form class="input-group" name="myForm" onsubmit="return validateForm();" method="POST"
+                          action="saver.php">
+                        <input name='email' type="email" class="form-email" placeholder="Enter your email">
+                        <button class="input-group-addon " id="submit" type="submit">Subscribe for news</button>
 
-<!--                        --><?php //if($_GET["email"]=="ok") {echo "Ваша електронна адреса збережена";}?>
+                        <!--                        --><?php //if($_GET["email"]=="ok") {echo "Ваша електронна адреса збережена";}?>
                     </form>
 
 
@@ -82,34 +89,70 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 main-content">
-                <img class="logo" src="img/project/logo.svg" alt="logo" type="image/png"/>
+                <div class="header-section">
+                    <img class="logo" src="img/project/logo.svg" alt="logo" type="image/png"/>
 
-                <div class="nav">
-                    <img class="menu" src=" img/Menu.png" alt="menu" type="image/png"/>
+                    <div class="nav">
+                        <img class="menu" src=" img/Menu.svg" alt="menu" type="image/png"/>
+                    </div>
                 </div>
-
 
                 <h2 class="title">Проект</h2>
                 <div class="textarea anim ">
                     <p>
-                        Навчальна онлайн платформа, що об'єднає та змінить освіту в Україні! Викладачі, студенти та батьки! Долучайтесь та долучіть свої навчальний заклад!
+                        Навчальна онлайн платформа, що об'єднає та змінить освіту в Україні! Викладачі, студенти та
+                        батьки! Долучайтесь та долучіть свої навчальний заклад!
                     </p>
                 </div>
 
+                <div class="wraper-img " >
 
+                    <div class="wraper">
+                        <img src="img/project/journal.svg" class="icon" alt="jornal">
+                        <div class="title-icon">Освітній журнал</div>
+                    </div>
+
+                    <div class="wraper ">
+                        <img src="img/project/teachers.svg" class="icon" alt="jornal">
+                        <div class="title-icon">Викладачі</div>
+                    </div>
+
+                    <div class="wraper ">
+                        <img src="img/project/subjects.svg" class="icon" alt="subjects">
+                        <div class="title-icon">Предмети</div>
+                    </div>
+
+                    <div class="wraper ">
+                        <img src="img/project/testing.svg" class="icon" alt="testing">
+                        <div class="title-icon">Тестування</div>
+                    </div>
+
+                    <div class="wraper ">
+                        <img src="img/project/shedule.svg" class="icon" alt="shedule">
+                        <div class="title-icon">Розклад</div>
+                    </div>
+
+                </div>
+
+
+                <div class="bottom-wrap">
+                    <img class="bottom-img" src="img/project/2-layers.svg" alt="bottom-img">
+                </div>
             </div>
+
         </div>
+
     </div>
 
 </section>
-<section  class="partners">
+<section class="partners">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 main-content">
                 <img class="logo" src="img/project/logo.svg" alt="logo" type="image/png"/>
 
                 <div class="nav">
-                    <img class="menu" src=" img/Menu.png" alt="menu" type="image/png"/>
+                    <img class="menu" src=" img/menu.svg" alt="menu" type="image/png"/>
                 </div>
 
 
@@ -125,7 +168,7 @@
         </div>
     </div>
 </section>
-<section  class="goal">
+<section class="goal">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 main-content">
@@ -139,17 +182,40 @@
                 <h2 class="title">Мета</h2>
                 <div class="textarea anim ">
                     <p>
-                        Створення потужної платформи, що дасть можливість школярам, студентам денної та заочної форми навчання отримати якісні знання!
+                        Створення потужної платформи, що дасть можливість школярам, студентам денної та заочної форми
+                        навчання отримати якісні знання!
                     </p>
                 </div>
 
+                <div class="wraper-img " >
 
+                    <div class="wraper">
+                        <img src="img/goal/59-layers.svg" class="icon" alt="teacher">
+                        <div class="title-icon">Викладачі</div>
+                        <div class="description-icon">якісну платформу для проведення лекцій та практик.</div>
+                    </div>
+
+                    <div class="wraper ">
+                        <img src="img/goal/28-layers.svg" class="icon" alt="jornal">
+                        <div class="title-icon">ВУЗам та школам</div>
+                        <div class="description-icon"> автоматичну генерацію розкладу, розсилку важливих новин, а також контроль за роботою викладачів.</div>
+                    </div>
+
+                    <div class="wraper ">
+                        <img src="img/goal/30-layers.svg" class="icon" alt="jornal">
+                        <div class="title-icon">Батькам </div>
+                        <div class="description-icon">отримання актуальної інформації про успіхи та досягнення, пропуски та негативні оцінки студентів та школярів.</div>
+                    </div>
+
+
+
+                </div>
             </div>
         </div>
     </div>
 </section>
-<section  class="who_we_are"></section>
-<section  class="contact">
+<section class="who_we_are"></section>
+<section class="contact">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 main-content">
@@ -163,7 +229,8 @@
                 <h2 class="title">Проект</h2>
                 <div class="textarea anim ">
                     <p>
-                        Навчальна онлайн платформа, що об'єднає та змінить освіту в Україні! Викладачі, студенти та батьки! Долучайтесь та долучіть свої навчальний заклад!
+                        Навчальна онлайн платформа, що об'єднає та змінить освіту в Україні! Викладачі, студенти та
+                        батьки! Долучайтесь та долучіть свої навчальний заклад!
                     </p>
                 </div>
 
