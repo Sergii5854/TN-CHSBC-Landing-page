@@ -17190,6 +17190,20 @@ body.modal-open {
   position: absolute;
   top: 40px;
   left: 40px;
+  width: 200px;
+}
+
+.hero-video .nav {
+  position: absolute;
+  display: block;
+  top: 40px;
+  right: 80px;
+}
+
+.hero-video .nav .menu {
+  position: relative;
+  display: block;
+  cursor: pointer;
 }
 
 .hero-video .background-element {
@@ -17272,6 +17286,12 @@ body.modal-open {
   cursor: pointer;
 }
 
+@media (max-width: 650px) {
+  .hero-video .content .logo {
+    max-width: 80vw;
+  }
+}
+
 .hero-video .content .title {
   color: #ffffff;
   font-size: 43px;
@@ -17302,24 +17322,9 @@ body.modal-open {
   line-height: 22px;
   font-weight: 300;
   max-width: 600px;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  left: 50%;
   position: relative;
-  padding: 25px 0;
-}
-
-@media (max-width: 650px) {
-  .hero-video .content .textarea {
-    max-width: 500px;
-  }
-}
-
-@media (max-width: 550px) {
-  .hero-video .content .textarea {
-    max-width: 400px;
-  }
+  padding: 25px 15px;
+  margin: 0 auto;
 }
 
 @media (max-width: 600px) {
@@ -17335,7 +17340,7 @@ body.modal-open {
 }
 
 .hero-video .content .input-group {
-  max-width: 600px;
+  max-width: 650px;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -17343,6 +17348,12 @@ body.modal-open {
   position: relative;
   padding: 15px 0;
   color: #FFF;
+}
+
+@media (max-width: 650px) {
+  .hero-video .content .input-group {
+    max-width: 80vw;
+  }
 }
 
 .hero-video .content .input-group .form-email {
@@ -17355,26 +17366,48 @@ body.modal-open {
   width: 420px;
   padding: 10px 30px 10px 30px;
   font-size: 20px;
+  outline: none;
+  border: 1px solid #fff;
 }
 
 .hero-video .content .input-group .form-email::-webkit-input-placeholder {
   color: #FFF;
 }
 
+@media (max-width: 650px) {
+  .hero-video .content .input-group .form-email {
+    max-width: 80vw;
+  }
+}
+
 .hero-video .content .input-group .input-group-addon {
-  padding: 15px 0;
-  width: 180px;
+  padding: 15px 30px 15px 30px;
+  width: 230px;
   border-radius: 40px;
   background: #ffd200;
   position: relative;
   font-size: 20px;
+  border: none;
   right: 35px;
   top: -4px;
+  outline: none;
+}
+
+@media (max-width: 650px) {
+  .hero-video .content .input-group .input-group-addon {
+    margin-top: 30px;
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 420px;
+    width: 80vw;
+  }
 }
 
 .hero-video .content .input-group .input-group-addon:hover {
   background: #3437ff;
   color: #ffd200;
+  cursor: pointer;
 }
 
 .hero-video #anim {
