@@ -2,6 +2,9 @@
   position: relative;
   overflow: hidden;
   height: auto;
+  @media (max-width: 650px) {
+    height: 100%;
+  }
 
 &:before {
     content: '';
@@ -30,12 +33,18 @@
     top: 40px;
     left: 40px;
     width: 200px;
+    @media (max-width: 650px) {
+     display: none;
+    }
   }
   .nav {
     position: absolute;
     display: block;
     top: 40px;
     right: 80px;
+    @media (max-width: 650px) {
+      right: 40px;
+    }
     .menu {
       position: relative;
       display: block;
@@ -56,6 +65,10 @@
     -webkit-animation: move_down 5s ease-in-out infinite;
     -moz-animation:    move_down 5s ease-in-out infinite;
     animation:         move_down 5s ease-in-out infinite;
+    @media (max-width: 650px) {
+      height: 100px;
+      width:30px;
+    }
   }
   .background-2{
     position: absolute;
@@ -64,6 +77,10 @@
     -webkit-animation: move_down 5s ease-in-out infinite;
     -moz-animation:    move_down 5s ease-in-out infinite;
     animation:         move_down 5s ease-in-out infinite;
+    @media (max-width: 650px) {
+      height: 100px;
+      width:30px;
+    }
   }
   .background-3{
     position: absolute;
@@ -72,6 +89,10 @@
     -webkit-animation: move_up 5s ease-in-out infinite;
     -moz-animation:    move_up 5s ease-in-out infinite;
     animation:         move_up 5s ease-in-out infinite;
+    @media (max-width: 650px) {
+      height: 100px;
+      width:30px;
+    }
   }
   .background-4{
     position: absolute;
@@ -80,6 +101,10 @@
     -webkit-animation: move_up 5s ease-in-out infinite;
     -moz-animation:    move_up 5s ease-in-out infinite;
     animation:         move_up 5s ease-in-out infinite;
+    @media (max-width: 650px) {
+      height: 100px;
+      width:30px;
+    }
   }
 }
 .background-img{
@@ -111,26 +136,15 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+    margin: 10px 0;
     .logo{
       margin: 0 auto;
       cursor: pointer;
       @media (max-width: 650px) {
-        max-width: 80vw;
+        max-width: 50vw;
       }
+    }
 
-    }
-    .title {
-      color: #ffffff;
-      font-size: 43px;
-      line-height: 52px;
-      font-weight: 300;
-      b {
-        display: block;
-        font-weight: 500;
-      }
-      @include vw-font-size(600, 43);
-      @include vw-font-size(500, 40);
-    }
 
     .textarea{
       color: #ffffff;
@@ -142,10 +156,15 @@
       position: relative;
       padding: 25px 15px;
       margin: 0 auto;
-
-      @include vw-font-size(600, 20);
-      @include vw-font-size(500, 20);
+      @media (max-width: 650px) {
+        max-width: 90vw;
+        line-height: 20px;
+        padding: 15px 5px;
+      }
+      //@include vw-font-size(600, 20);
+      @include vw-font-size(500, 18);
     }
+
     .input-group{
       max-width: 650px;
       transform: translateX(-50%);
@@ -186,7 +205,7 @@
         top: -4px;
         outline: none;
         @media (max-width: 650px) {
-          margin-top: 30px ;
+          margin-top: 20px ;
           position: relative;
           top: 0;
           left: 0;

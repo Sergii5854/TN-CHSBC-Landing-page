@@ -8,10 +8,9 @@
 
     <link rel="shortcut icon" href="img/favicon.png" type="image/png"/>
     <link href="build/css/style.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext" rel="stylesheet">
 
-    <title>Landing Page </title>
+    <title>Brainside.org - безкоштовна система онлайн навчання by Brainbasket! </title>
     <!--[if lte IE 9 ]>
     <script>
         alert('Browser version is too old and site will not be displayed correctly. Please, upgrade your browser.');
@@ -19,9 +18,9 @@
     <![endif]-->
 
 </head>
-<body>
+<body  >
 
-<header>
+<header >
 
     <div class="container">
 
@@ -33,51 +32,49 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 main-content">
-                <img class="logo-small" src="img/2.png" alt="logo" type="image/png"/>
+                <img class="logo-small" src="img/logo_small.png" alt="logo" type="image/png"/>
 
                 <div class="background-element">
-                    <img class="background-1" src=" img/Background_element.png" alt="Background element"
-                         type="image/png"/>
-                    <img class="background-2" src=" img/Background_element.png" alt="Background element"
-                         type="image/png"/>
-                    <img class="background-3" src=" img/Background_element.png" alt="Background element"
-                         type="image/png"/>
-                    <img class="background-4" src=" img/Background_element.png" alt="Background element"
-                         type="image/png"/>
+                    <img class="background-1" src=" img/Background_element.png" alt="Background element" type="image/png"/>
+                    <img class="background-2" src=" img/Background_element.png" alt="Background element" type="image/png"/>
+                    <img class="background-3" src=" img/Background_element.png" alt="Background element" type="image/png"/>
+                    <img class="background-4" src=" img/Background_element.png" alt="Background element" type="image/png"/>
                 </div>
 
-                <img class="background-img" src="img/rsz_woman-notebook-working-girl.jpg" alt="logo" type="image/png"/>
+                <!--<img class="background-img" src="img/rsz_woman-notebook-working-girl.jpg" alt="logo" type="image/png"/>-->
                 <div class="nav">
                     <img class="menu" src=" img/Menu.png" alt="menu" type="image/png"/>
                 </div>
-                <!--<video autoplay="" loop="" muted="" class="bgvideo">
+                <video autoplay="" loop="" muted="" class="bgvideo">
 
-                    <source src="video/Hello_BrainBasket.mp4">
+                    <source src="563399566.mp4">
 
-                </video>-->
+                </video>
 
                 <div class="content">
 
-                    <img class="logo anim " src=" img/logo-big.png" alt="logo" type="image/png"/>
+                    <img class="logo anim " src=" img/logo_big.png" alt="logo" type="image/png"/>
 
 
                     <div class="textarea anim ">
                         <p>
-                            CS50 is a free online class introducing students to the basics of computer science. CS50 is
-                            taught by David Malan of Harvard
+                            Безкоштовна система онлайн-навчання від Brainbasket Foundation для шкіл, коледжів та ВУЗів. <br>Підпишіться на нас, щоб не пропустити запуск!
                         </p>
                     </div>
-                    <form class="input-group" name="myForm" onsubmit="return validateForm();" method="POST"
-                          action="saver.php">
-                        <input name='email' type="email" class="form-email" placeholder="Enter your email">
-                        <button class="input-group-addon " id="submit" type="submit">Subscribe for news</button>
+                    <form class="input-group" name="myForm" onsubmit="return validateForm();" method="POST" action="saver.php">
+                        <input name='email' type="email" class="form-email" placeholder="Enter your email" >
+                        <button class="input-group-addon " id="submit"  type="submit" >Subscribe for news</button>
 
-                        <!--                        --><?php //if($_GET["email"]=="ok") {echo "Ваша електронна адреса збережена";}?>
+<!--                        --><?php //if($_GET["email"]=="ok") {echo "Дякуємо за відповідь! Ваша електронна адреса збережена. ";}?>
                     </form>
 
 
                 </div>
-                <img class="scroll_icon" src="img/Scroll_icon.png" alt="Scroll_icon" type="image/png"/>
+                <!-- <img class="scroll_icon" src="img/Scroll_icon.png" alt="Scroll_icon" type="image/png"/> -->
+
+
+
+
             </div>
         </div>
 
