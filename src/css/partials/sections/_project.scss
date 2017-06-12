@@ -1,7 +1,14 @@
 .project {
   margin: 0;
   padding:0;
- height: 858px;
+ //height: 858px;
+  overflow: hidden;
+min-height: 540px;
+  @media (max-width: 850px) {
+    height: 100%;
+    min-height: 540px;
+  }
+
   .container{
     padding-right: 0;
     padding-left: 0;
@@ -26,12 +33,21 @@
     top: 40px;
     left: 40px;
     width: 200px;
+    @media (max-width: 650px) {
+      width: 100px;
+    }
+    @media (max-width: 550px) {
+      display: none;
+    }
   }
   .nav {
     position: absolute;
     display: block;
     top: 40px;
     right: 80px;
+    @media (max-width: 650px) {
+      right: 40px;
+    }
     .menu {
       position: relative;
       display: block;
@@ -39,70 +55,98 @@
     }
   }
 }
-  .title {
-    color: #262626;
-    font-family: "Century Gothic";
-    font-size: 45px;
-    font-weight: 700;
+    .content {
+      text-align: center;
 
-    text-transform: uppercase;
-    text-align: center;
-    padding: 128px 15px 39px 15px;
-  }
-  .textarea {
-    max-width: 780px;
-
-    color: #262626;
-    font-family: "Century Gothic";
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 33px;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0 15px 95px 15px;
-    @media (max-width: 850px) {
-      padding: 0 15px 55px 15px;
-    }
-  }
-  .wraper-img {
-    width: 100%;
-    max-width: 944px;
-    margin: 0 auto;
-    text-align: center;
-    .wraper {
-      width: 20%;
-      float: left;
-      @media (max-width: 550px) {
-        width: auto;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      margin: 10px 0;
+      position: relative;
+      @media (max-width: 850px) {
+        padding: 0 15px 0 15px ;
+        top: 23%;
       }
-      .icon {
-        text-align: center;
-        height: 100px;
-        vertical-align: middle;
-        @media (max-width: 850px) {
-          max-width: 50%;
-        }
-      }
-      .title-icon {
-
+      .title {
         color: #262626;
         font-family: "Century Gothic";
-        font-size: 24px;
+        font-size: 45px;
         font-weight: 700;
-        line-height: 24px;
-        padding: 20px;
+
+        text-transform: uppercase;
+        text-align: center;
+        padding: 28px 15px 39px 15px;
         @media (max-width: 850px) {
-          font-size: 20px;
-          font-weight: 500;
-          padding: 10px;
+          font-size: 30px;
+          padding: 28px 15px 15px 15px;
         }
-        @media (max-width: 650px) {
+      }
+      .textarea {
+        max-width: 780px;
+        color: #262626;
+        font-family: "Century Gothic";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 33px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 15px 95px 15px;
+        @media (max-width: 850px) {
+          padding: 0 15px 25px 15px;
           font-size: 18px;
+          line-height: 23px;
+        }
+        @media (max-width: 850px) {
+          padding: 0 10px 5px 10px;
           font-weight: 300;
+          line-height: 20px;
+        }
+      }
+      .wraper-img {
+        width: 100%;
+        max-width: 944px;
+        margin: 0 auto;
+        text-align: center;
+        .wraper {
+          width: 20%;
+          float: left;
+          @media (max-width: 550px) {
+            width: auto;
+          }
+          .icon {
+            text-align: center;
+            height: 100px;
+            vertical-align: middle;
+            @media (max-width: 850px) {
+              max-width: 50%;
+            }
+            @media (max-width: 650px) {
+              max-width: 40%;
+            }
+          }
+          .title-icon {
+
+            color: #262626;
+            font-family: "Century Gothic";
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 24px;
+            padding: 20px;
+            @media (max-width: 850px) {
+              font-size: 20px;
+              font-weight: 500;
+              padding: 0;
+            }
+            @media (max-width: 650px) {
+              font-size: 18px;
+              font-weight: 300;
+              line-height: 18px;
+            }
+          }
         }
       }
     }
-  }
   .bottom-wrap {
     position: absolute;
     bottom: 0;
@@ -119,4 +163,32 @@
     }
   }
 }
+
+  .ocean {
+    height: 5%;
+    width:100%;
+    position:relative;
+    bottom:0;
+    left:0;
+   // background: #ffc900;
+    z-index: -99999;
+  }
+
+  .wave {
+    background: url(../../img/project/wave.svg) repeat-x; //http://tedmcdo.com/labs/wave.svg
+    position: absolute;
+    top: -198px;
+    width: 3400px;
+    height: 198px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .wave:nth-of-type(2) {
+    top: -175px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+  }
+
+
 }

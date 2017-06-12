@@ -6,12 +6,18 @@
  * Time: 2:28 PM
  */
 $file = 'emailList.txt';
-// Открываем файл для получения существующего содержимого
+
 $current = file_get_contents($file);
 
 $_POST["email"];
+$date = new DateTime();
+$_SERVER['REMOTE_ADDR'];
 
-$result = $current . "\n" .$_POST["email"];
 
-file_put_contents($file, $result);
+file_put_contents($file, "
+          IP: " . $_SERVER['REMOTE_ADDR'] . "
+          email:  " . $_POST['email'] . "
+          datetime: " . $date->format('Y-m-d H:i:s') . "\n-----------------------------------------------------------------------------------\n
+        ", FILE_APPEND);
+
 header('Location: /?email=ok');

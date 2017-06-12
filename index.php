@@ -8,7 +8,8 @@
 
     <link rel="shortcut icon" href="img/favicon.png" type="image/png"/>
     <link href="build/css/style.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext"
+          rel="stylesheet">
 
     <title>Brainside.org - безкоштовна система онлайн навчання by Brainbasket! </title>
     <!--[if lte IE 9 ]>
@@ -18,9 +19,9 @@
     <![endif]-->
 
 </head>
-<body  >
+<body>
 
-<header >
+<header>
 
     <div class="container">
 
@@ -35,10 +36,14 @@
                 <img class="logo-small" src="img/logo_small.png" alt="logo" type="image/png"/>
 
                 <div class="background-element">
-                    <img class="background-1" src=" img/Background_element.png" alt="Background element" type="image/png"/>
-                    <img class="background-2" src=" img/Background_element.png" alt="Background element" type="image/png"/>
-                    <img class="background-3" src=" img/Background_element.png" alt="Background element" type="image/png"/>
-                    <img class="background-4" src=" img/Background_element.png" alt="Background element" type="image/png"/>
+                    <img class="background-1" src=" img/Background_element.png" alt="Background element"
+                         type="image/png"/>
+                    <img class="background-2" src=" img/Background_element.png" alt="Background element"
+                         type="image/png"/>
+                    <img class="background-3" src=" img/Background_element.png" alt="Background element"
+                         type="image/png"/>
+                    <img class="background-4" src=" img/Background_element.png" alt="Background element"
+                         type="image/png"/>
                 </div>
 
                 <!--<img class="background-img" src="img/rsz_woman-notebook-working-girl.jpg" alt="logo" type="image/png"/>-->
@@ -58,21 +63,21 @@
 
                     <div class="textarea anim ">
                         <p>
-                            Безкоштовна система онлайн-навчання від Brainbasket Foundation для шкіл, коледжів та ВУЗів. <br>Підпишіться на нас, щоб не пропустити запуск!
+                            Безкоштовна система онлайн-навчання від Brainbasket Foundation для шкіл, коледжів та ВУЗів.
+                            <br>Підпишіться на нас, щоб не пропустити запуск!
                         </p>
                     </div>
-                    <form class="input-group" name="myForm" onsubmit="return validateForm();" method="POST" action="saver.php">
-                        <input name='email' type="email" class="form-email" placeholder="Enter your email" >
-                        <button class="input-group-addon " id="submit"  type="submit" >Subscribe for news</button>
+                    <form class="input-group" name="myForm" onsubmit="return validateForm();" method="POST"
+                          action="saver.php">
+                        <input name='email' type="email" class="form-email" placeholder="Enter your email">
+                        <button class="input-group-addon " id="submit" type="submit">Subscribe for news</button>
 
-<!--                        --><?php //if($_GET["email"]=="ok") {echo "Дякуємо за відповідь! Ваша електронна адреса збережена. ";}?>
+                        <!--                        --><?php //if($_GET["email"]=="ok") {echo "Дякуємо за відповідь! Ваша електронна адреса збережена. ";}?>
                     </form>
 
 
                 </div>
                 <!-- <img class="scroll_icon" src="img/Scroll_icon.png" alt="Scroll_icon" type="image/png"/> -->
-
-
 
 
             </div>
@@ -93,54 +98,57 @@
                         <img class="menu" src=" img/Menu.svg" alt="menu" type="image/png"/>
                     </div>
                 </div>
+                <div class="content">
+                    <h2 class="title">Проект</h2>
+                    <div class="textarea anim ">
+                        <p>
+                            Навчальна онлайн платформа, що об'єднає та змінить освіту в Україні! Викладачі, студенти та
+                            батьки! Долучайтесь та долучіть свої навчальний заклад!
+                        </p>
+                    </div>
 
-                <h2 class="title">Проект</h2>
-                <div class="textarea anim ">
-                    <p>
-                        Навчальна онлайн платформа, що об'єднає та змінить освіту в Україні! Викладачі, студенти та
-                        батьки! Долучайтесь та долучіть свої навчальний заклад!
-                    </p>
+                    <div class="wraper-img ">
+
+                        <div class="wraper">
+                            <img src="img/project/journal.svg" class="icon" alt="jornal">
+                            <div class="title-icon">Освітній журнал</div>
+                        </div>
+
+                        <div class="wraper ">
+                            <img src="img/project/teachers.svg" class="icon" alt="jornal">
+                            <div class="title-icon">Викладачі</div>
+                        </div>
+
+                        <div class="wraper ">
+                            <img src="img/project/subjects.svg" class="icon" alt="subjects">
+                            <div class="title-icon">Предмети</div>
+                        </div>
+
+                        <div class="wraper ">
+                            <img src="img/project/testing.svg" class="icon" alt="testing">
+                            <div class="title-icon">Тестування</div>
+                        </div>
+
+                        <div class="wraper ">
+                            <img src="img/project/shedule.svg" class="icon" alt="shedule">
+                            <div class="title-icon">Розклад</div>
+                        </div>
+
+                    </div>
                 </div>
 
-                <div class="wraper-img " >
-
-                    <div class="wraper">
-                        <img src="img/project/journal.svg" class="icon" alt="jornal">
-                        <div class="title-icon">Освітній журнал</div>
-                    </div>
-
-                    <div class="wraper ">
-                        <img src="img/project/teachers.svg" class="icon" alt="jornal">
-                        <div class="title-icon">Викладачі</div>
-                    </div>
-
-                    <div class="wraper ">
-                        <img src="img/project/subjects.svg" class="icon" alt="subjects">
-                        <div class="title-icon">Предмети</div>
-                    </div>
-
-                    <div class="wraper ">
-                        <img src="img/project/testing.svg" class="icon" alt="testing">
-                        <div class="title-icon">Тестування</div>
-                    </div>
-
-                    <div class="wraper ">
-                        <img src="img/project/shedule.svg" class="icon" alt="shedule">
-                        <div class="title-icon">Розклад</div>
-                    </div>
-
-                </div>
-
-
-                <div class="bottom-wrap">
-                    <img class="bottom-img" src="img/project/2-layers.svg" alt="bottom-img">
-                </div>
+                <!--                <div class="bottom-wrap">-->
+                <!--                    <img class="bottom-img" src="img/project/2-layers.svg" alt="bottom-img">-->
+                <!--                </div>-->
             </div>
 
         </div>
 
     </div>
-
+    <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
 </section>
 <section class="partners">
     <div class="container">
@@ -184,7 +192,7 @@
                     </p>
                 </div>
 
-                <div class="wraper-img " >
+                <div class="wraper-img ">
 
                     <div class="wraper">
                         <img src="img/goal/59-layers.svg" class="icon" alt="teacher">
@@ -195,15 +203,18 @@
                     <div class="wraper ">
                         <img src="img/goal/28-layers.svg" class="icon" alt="jornal">
                         <div class="title-icon">ВУЗам та школам</div>
-                        <div class="description-icon"> автоматичну генерацію розкладу, розсилку важливих новин, а також контроль за роботою викладачів.</div>
+                        <div class="description-icon"> автоматичну генерацію розкладу, розсилку важливих новин, а також
+                            контроль за роботою викладачів.
+                        </div>
                     </div>
 
                     <div class="wraper ">
                         <img src="img/goal/30-layers.svg" class="icon" alt="jornal">
-                        <div class="title-icon">Батькам </div>
-                        <div class="description-icon">отримання актуальної інформації про успіхи та досягнення, пропуски та негативні оцінки студентів та школярів.</div>
+                        <div class="title-icon">Батькам</div>
+                        <div class="description-icon">отримання актуальної інформації про успіхи та досягнення, пропуски
+                            та негативні оцінки студентів та школярів.
+                        </div>
                     </div>
-
 
 
                 </div>
