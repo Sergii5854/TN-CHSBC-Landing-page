@@ -177,12 +177,13 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 main-content">
+
                 <img class="logo" src="img/project/logo.svg" alt="logo" type="image/png"/>
 
                 <div class="nav">
                     <img class="menu" src=" img/Menu.png" alt="menu" type="image/png"/>
                 </div>
-
+                <div class="content">
 
                 <h2 class="title">Мета</h2>
                 <div class="textarea anim ">
@@ -216,7 +217,7 @@
                         </div>
                     </div>
 
-
+                    </div >
                 </div>
             </div>
         </div>
@@ -227,22 +228,37 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 main-content">
+
                 <img class="logo" src="img/project/logo.svg" alt="logo" type="image/png"/>
 
                 <div class="nav">
                     <img class="menu" src=" img/Menu.png" alt="menu" type="image/png"/>
                 </div>
+                <div class="content">
+
+                    <h2 class="title">Контакти</h2>
+
+                    <div class="wraper-img ">
+
+                        <div class="wraper">
+                            <img src="img/contact/7-layers.svg" class="icon" alt="map"> <a class="description-icon" target="_blank " href="https://www.google.com/maps/place/%D0%93%D0%BE%D1%80%D0%B8%D0%B7%D0%BE%D0%BD%D1%82+%D0%9F%D0%B0%D1%80%D0%BA/@50.4233259,30.504417,17z/data=!4m8!1m2!2m1!1z0JrQuNGX0LIsINCy0YPQuy4g0JzQuNC60L7Qu9C4INCQ0LzQvtGB0L7QstCwLCAxMiDQkdCmICJIb3Jpem9uIFBhcmsi!3m4!1s0x0:0x5c19bf7554f3b262!8m2!3d50.423774!4d30.5080958" >Київ, вул. Миколи Амосова, 12
+                                БЦ "Horizon Park", друга вежа</a>
+                        </div>
+
+                        <div class="wraper ">
+                            <img src="img/contact/5-layers.svg" class="icon" alt="web"><a class="description-icon" target="_blank" href="https://brainbasket.org/">bbf@brainbasket.org
+                            </a>
+                        </div>
 
 
-                <h2 class="title">Проект</h2>
-                <div class="textarea anim ">
-                    <p>
-                        Навчальна онлайн платформа, що об'єднає та змінить освіту в Україні! Викладачі, студенти та
-                        батьки! Долучайтесь та долучіть свої навчальний заклад!
-                    </p>
+
+                    </div >
+
+                    <div class="wraper-foo ">
+                        <img src="img/contact/brainbasket-logo.png" class="icon-foo" alt="footer"> <p class="description-icon-foo">Фонд BrainBasket є некомерційною, неурядовою організацією, яка займається розвитком освіти в сфері ІТ. BrainBasket прагне зробити IT-галузь рушійною силою економічного зростання України шляхом поліпшення освітньої інфраструктури. Глобальною метою Фонду є сприяння у підготовці 100 000 нових IT-фахівців до 2020 року.
+                        </p>
+                    </div>
                 </div>
-
-
             </div>
         </div>
     </div>
