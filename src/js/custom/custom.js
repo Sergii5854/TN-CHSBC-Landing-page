@@ -1,9 +1,9 @@
-
+///animation text
 $('#anim').fadeIn(1500) //wait3 1.5 s.
     .show(1000);
 
 
-
+//////validation email front-end
 function validateForm() {
     var x = document.forms["myForm"]["email"].value;
     var atpos = x.indexOf("@");
@@ -22,23 +22,27 @@ function validateForm() {
         document.writeln("color:mediumblue">"Mail send");
 
 
-
-
     }
 }
-function myFunction() {
+
+////lang swicher
+$(function(){
+$( document ).ready(function() {
+$(function() {
+    $( ".switch" ).click(function(){
+        $( ".text-on" ).switchClass( "text-on", "text-off", 10 );
+        $( ".text-off" ).switchClass( "text-off", "text-on", 10 );
+    });
+});
 
 
-    var email =  document.getElementsByClassName("form-email")[0].value;
 
+$(function() {
+    $( "#language-toggle" ).click(function(){
+        $( ".text-on" ).switchClass( "text-on", "text-off", 10 );
+        $( ".text-off" ).switchClass( "text-off", "text-on", 10 );
+    });
+});
 
-    alert(email);
-
-    var fso  = new ActiveXObject("Scripting.FileSystemObject");
-    alert(fso);
-    var fh = fso.CreateTextFile("emailList", true);
-    alert(fh);
-    fh.WriteLine("Some text goes here...");
-    alert( fh.WriteLine("Some text goes here..."));
-    fh.Close();
-}
+});
+});

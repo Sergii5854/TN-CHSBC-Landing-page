@@ -48,6 +48,21 @@
 
                 <!--<img class="background-img" src="img/rsz_woman-notebook-working-girl.jpg" alt="logo" type="image/png"/>-->
                 <div class="nav">
+
+
+                    <div class="lang">
+                        <div class="switch-container">
+                            <div class="switch">
+                                <input type="radio" name="switch" id="switch--left" checked>
+                                <input type="radio" name="switch" id="switch--right">
+
+                                <label for="switch--left">UA</label>
+                                <label for="switch--right">EN</label>
+
+                                <span class="toggle"></span>
+                            </div>
+                        </div>
+                    </div>
                     <img class="menu" src=" img/Menu.png" alt="menu" type="image/png"/>
                 </div>
                 <video autoplay="" loop="" muted="" class="bgvideo">
@@ -62,11 +77,14 @@
 
 
                     <div class="textarea anim ">
-                        <p>
+                        <p class="text-ua">
                             Безкоштовна система онлайн-навчання від Brainbasket Foundation для шкіл, коледжів та ВУЗів.
                             <br>Підпишіться на нас, щоб не пропустити запуск!
                         </p>
-                    </div>
+                        <p class="text-eng">Free online training system from Brainbasket Foundation for schools, colleges and universities.
+                            <br>Follow us not to miss the launch!
+                        </p>
+
                     <form class="input-group" name="myForm" onsubmit="return validateForm();" method="POST"
                           action="saver.php">
                         <input name='email' type="email" class="form-email" placeholder="Enter your email">
@@ -202,7 +220,7 @@
                     </div>
 
                     <div class="wraper ">
-                        <img src="img/goal/28-layers.svg" class="icon" alt="jornal">
+                        <img src="img/goal/28-layers.svg" class="icon" alt="ico">
                         <div class="title-icon">ВУЗам та школам</div>
                         <div class="description-icon"> автоматичну генерацію розкладу, розсилку важливих новин, а також
                             контроль за роботою викладачів.
@@ -210,17 +228,23 @@
                     </div>
 
                     <div class="wraper ">
-                        <img src="img/goal/30-layers.svg" class="icon" alt="jornal">
+                        <img src="img/goal/30-layers.svg" class="icon" alt="ico">
                         <div class="title-icon">Батькам</div>
                         <div class="description-icon">отримання актуальної інформації про успіхи та досягнення, пропуски
                             та негативні оцінки студентів та школярів.
                         </div>
                     </div>
 
+
+
                     </div >
                 </div>
             </div>
         </div>
+    </div>
+    <div class="ocean">
+        <div class="wave-right"></div>
+        <div class="wave-right"></div>
     </div>
 </section>
 <section class="who_we_are"></section>

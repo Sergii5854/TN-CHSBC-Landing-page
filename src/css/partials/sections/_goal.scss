@@ -1,7 +1,8 @@
 .goal {
   margin: 0;
   padding: 0;
-  height: 858px;
+  overflow: hidden;
+  min-height: 540px;
   @media (max-width: 850px) {
     height: 100%;
     min-height: 540px;
@@ -168,4 +169,32 @@
       }
     }
   }
+
+
+  .ocean {
+    height: 5%;
+    width:100%;
+    position:relative;
+    bottom:0;
+    left:0;
+    // background: #ffc900;
+    z-index: -99999;
+  }
+
+  .wave-right {
+    background: url(../../img/project/wave.svg) repeat-x; //http://tedmcdo.com/labs/wave.svg
+    position: absolute;
+    top: -178px;
+    width: 3400px;
+    height: 178px;
+    animation: wave 10s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .wave-right:nth-of-type(2) {
+    top: -145px;
+    animation: wave 10s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 10s ease -1.35s infinite;
+    opacity: 1;
+  }
+
 }

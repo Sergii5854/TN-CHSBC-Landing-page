@@ -151,15 +151,15 @@
       font-size: 23px;
       line-height: 22px;
       font-weight: 300;
-      max-width: 600px;
+      max-width: 620px;
 
       position: relative;
-      padding: 25px 15px;
+      padding: 25px 5px 25px 5px;
       margin: 0 auto;
       @media (max-width: 650px) {
         max-width: 90vw;
         line-height: 20px;
-        padding: 15px 5px;
+        padding: 15px 5px 15px 5px;
       }
       //@include vw-font-size(600, 20);
       @include vw-font-size(500, 18);
@@ -178,10 +178,9 @@
 
       .form-email{
         border-radius: 40px;
-        background-color: rgba(133, 132, 129, 0.8 );
-        user-select: text;
-        width: 410px;
-        padding: 10px 30px 10px 30px;
+        background-color: rgba(133, 132, 129, 0.8);
+        width: 373px;
+        padding: 13px 30px 13px 30px;
         font-size: 20px;
         outline: none;
         border: 1px solid #fff;
@@ -190,6 +189,7 @@
         }
         @media (max-width: 650px) {
           max-width: 80vw;
+          width:420px;
         }
       }
       .input-group-addon{
@@ -199,10 +199,9 @@
         background: #ffd200;
         position: relative;
         font-size: 20px;
-
         border: none;
         right: 35px;
-        top: -4px;
+        /* top: -4px; */
         outline: none;
         @media (max-width: 650px) {
           margin-top: 20px ;

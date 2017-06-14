@@ -1,0 +1,121 @@
+  .text-eng{
+    visibility: hidden;
+    display: none;
+  }
+.lang{
+    position: absolute;
+    top: 30px;
+    right: 100px;
+
+
+
+    $switch-width: 60px;
+    $switch-height: 36px;
+    $toggle-size: 24px;
+    $black: #000;
+    $white: #fff;
+
+    input {
+      font-family: inherit;
+      line-height: normal;
+      margin: 0;
+    }
+    input[type="radio"] {
+      box-sizing: border-box;
+      padding: 0;
+    }
+    .switch-container {
+      left: 50%;
+      margin: -32px 0 0 -80px;
+      position: absolute;
+      top: 20%;
+      width: $switch-width;
+    }
+    .switch {
+      background: $white;
+      border-radius: 32px;
+      cursor: pointer;
+      display: block;
+      height: 32px;
+      position: relative;
+      width: $switch-width;
+    }
+
+    .switch label {
+      color: $white;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: $switch-height;
+      text-transform: uppercase;
+      -webkit-transition: color .2s ease;
+      -moz-transition: color .2s ease;
+      -ms-transition: color .2s ease;
+      -o-transition: color .2s ease;
+      transition: color .2s ease;
+      width: $switch-width - $toggle-size - 4px;
+    }
+
+    .switch label:nth-of-type(1) {
+      left: -75%;
+      position: absolute;
+      text-align: right;
+    }
+
+    .switch label:nth-of-type(2) {
+      position: absolute;
+      right: -75%;
+      text-align: left;
+    }
+
+    .switch input {
+      cursor: pointer;
+      height: 32px;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      width: 80px;
+      z-index: 2;
+    }
+
+    .switch input:checked~label:nth-of-type(1) { color: $white; }
+    .switch input:checked~label:nth-of-type(2) { color: #808080; }
+
+    .switch input~:checked~label:nth-of-type(1) { color: #808080; }
+    .switch input~:checked~label:nth-of-type(2) { color: $white; }
+
+    .switch input:checked~.toggle {
+      left: 4px;
+    }
+
+    .switch input~:checked~.toggle {
+      left: $switch-width - $toggle-size - 4px;
+    }
+
+    .switch input:checked {
+      z-index: 0;
+    }
+
+    .toggle {
+      background: $black;
+      border-radius: 50%;
+      height: $toggle-size;
+      left: 0;
+      position: absolute;
+      top: 4px;
+      -webkit-transition: left .2s ease;
+      -moz-transition: left .2s ease;
+      -ms-transition: left .2s ease;
+      -o-transition: left .2s ease;
+      transition: left .2s ease;
+      width: $toggle-size;
+      z-index: 1;
+    }
+
+
+  }
+
+
+
+
