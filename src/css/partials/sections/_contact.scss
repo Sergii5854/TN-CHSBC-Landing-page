@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   height: 858px;
+  overflow: hidden;
+  min-height: 540px;
   @media (max-width: 850px) {
     height: 100%;
     min-height: 540px;
@@ -52,16 +54,15 @@
 
     .content {
       text-align: center;
-
-      top: 30%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      //top: 30%;
+      //left: 50%;
+      //transform: translate(-50%, -50%);
       width: 100%;
       margin: 10px 0;
       position: relative;
       @media (max-width: 850px) {
         padding: 0 15px 0 15px;
-        top: 25%;
+      //  top: 25%;
       }
       .title {
         color: #262626;
@@ -128,10 +129,11 @@
             font-weight: 400;
             padding: 0 20px;
             //float: right;
+            display: inline-table;
             text-decoration: none;
             @media (max-width: 650px) {
               font-size: 18px;
-
+              padding:  10px;
               line-height: 18px;
             }
 
@@ -151,6 +153,7 @@
           @media (max-width: 550px) {
             width: auto;
             padding: 20px 0 20px 0;
+            margin: 20px 0 20px 0;
           }
           .icon-foo {
             text-align: center;
@@ -174,6 +177,8 @@
               font-size: 18px;
               width: 100%;
               line-height: 18px;
+              padding:15px 0 50px 0;
+
             }
 
           }

@@ -29,7 +29,7 @@
 
 </header>
 
-<section class="hero-video">
+<section class="hero-video" data-anchor="home">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 main-content">
@@ -63,7 +63,10 @@
                             </div>
                         </div>
                     </div>
+                    <div class="menu-wrap">
                     <img class="menu" src=" img/Menu.png" alt="menu" type="image/png"/>
+
+                    </div>
                 </div>
                 <video autoplay="" loop="" muted="" class="bgvideo">
 
@@ -105,7 +108,7 @@
     </div>
 </section>
 
-<section class="project">
+<section class="project" data-anchor="project">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 main-content">
@@ -168,7 +171,7 @@
         <div class="wave"></div>
     </div>
 </section>
-<section class="partners">
+<section class="partners" data-anchor="partners">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 main-content">
@@ -177,21 +180,45 @@
                 <div class="nav">
                     <img class="menu" src=" img/menu.svg" alt="menu" type="image/png"/>
                 </div>
+                <div class="content">
+
+                    <h2 class="title">Партнери</h2>
+                    <div class="textarea anim ">
+                        <p>
+                            Партнери, які долучилися до розвитку нашого проекта
+                        </p>
+                    </div>
+
+                    <div class="wraper-img ">
+
+                        <div class="wraper">
+                            <img src="img/partners/brainbasket.png" class="icon" alt="partner">
+                        </div>
+
+                        <div class="wraper">
+                            <img src="img/partners/ciklum.png" class="icon" alt="partner">
+                        </div>
+
+                        <div class="wraper">
+                            <img src="img/partners/collegue.png" class="icon" alt="partner">
+                        </div>
+
+                        <div class="wraper">
+                            <img src="img/partners/min.png" class="icon" alt="partner">
+                        </div>
+
+                        <div class="wraper">
+                            <img src="img/partners/syngenta.png" class="icon" alt="partner">
+                        </div>
 
 
-                <h2 class="title">Партнери</h2>
-                <div class="textarea anim ">
-                    <p>
-                        Партнери, які долучилися до розвитку нашого проекта
-                    </p>
+                    </div >
                 </div>
-
-
             </div>
         </div>
     </div>
 </section>
-<section class="goal">
+<section class="goal" data-anchor="goal">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 main-content">
@@ -247,17 +274,19 @@
         <div class="wave-right"></div>
     </div>
 </section>
-<section class="who_we_are"></section>
-<section class="contact">
+<section class="who_we_are" data-anchor="who_we_are"></section>
+<section class="contact" data-anchor="contact">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 main-content">
 
-                <img class="logo" src="img/project/logo.svg" alt="logo" type="image/png"/>
+                    <img class="logo" src="img/project/logo.svg" alt="logo" type="image/png"/>
 
-                <div class="nav">
-                    <img class="menu" src=" img/Menu.png" alt="menu" type="image/png"/>
-                </div>
+                    <div class="nav">
+                        <img class="menu" src=" img/Menu.png" alt="menu" type="image/png"/>
+                    </div>
+
+
                 <div class="content">
 
                     <h2 class="title">Контакти</h2>
@@ -266,7 +295,7 @@
 
                         <div class="wraper">
                             <img src="img/contact/7-layers.svg" class="icon" alt="map"> <a class="description-icon" target="_blank " href="https://www.google.com/maps/place/%D0%93%D0%BE%D1%80%D0%B8%D0%B7%D0%BE%D0%BD%D1%82+%D0%9F%D0%B0%D1%80%D0%BA/@50.4233259,30.504417,17z/data=!4m8!1m2!2m1!1z0JrQuNGX0LIsINCy0YPQuy4g0JzQuNC60L7Qu9C4INCQ0LzQvtGB0L7QstCwLCAxMiDQkdCmICJIb3Jpem9uIFBhcmsi!3m4!1s0x0:0x5c19bf7554f3b262!8m2!3d50.423774!4d30.5080958" >Київ, вул. Миколи Амосова, 12
-                                БЦ "Horizon Park", друга вежа</a>
+                                <br>БЦ "Horizon Park", друга вежа</a>
                         </div>
 
                         <div class="wraper ">

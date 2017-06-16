@@ -16877,21 +16877,21 @@ button:focus {
 
 @-webkit-keyframes wave-right {
   0% {
-    margin-right: 0;
+    margin-left: 0;
   }
 
   100% {
-    margin-right: -1600px;
+    margin-left: -1600px;
   }
 }
 
 @keyframes wave-right {
   0% {
-    margin-right: 0;
+    margin-left: 0;
   }
 
   100% {
-    margin-right: -1600px;
+    margin-left: -1600px;
   }
 }
 
@@ -17740,20 +17740,6 @@ body.modal-open {
   }
 }
 
-.project .main-content .bottom-wrap {
-  position: absolute;
-  bottom: 0;
-  left: -10%;
-  width: 110%;
-}
-
-.project .main-content .bottom-wrap .bottom-img {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  width: 110%;
-}
-
 .project .ocean {
   height: 5%;
   width: 100%;
@@ -17783,10 +17769,18 @@ body.modal-open {
 }
 
 .partners {
-  height: 100vh;
   margin: 0;
   padding: 0;
   height: 858px;
+  overflow: hidden;
+  min-height: 540px;
+}
+
+@media (max-width: 850px) {
+  .partners {
+    height: 100%;
+    min-height: 540px;
+  }
 }
 
 .partners .container {
@@ -17795,25 +17789,51 @@ body.modal-open {
   margin-right: 0;
   margin-left: 0;
   margin: 0 auto;
+  max-width: 1440px;
 }
 
 .partners .main-content {
   max-width: 944px;
+  position: relative;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  left: 50%;
   height: 100vh;
 }
 
 .partners .main-content .logo {
+  max-width: 1440px !important;
   position: absolute;
   top: 40px;
   left: 40px;
   width: 200px;
 }
 
+@media (max-width: 650px) {
+  .partners .main-content .logo {
+    width: 100px;
+  }
+}
+
+@media (max-width: 550px) {
+  .partners .main-content .logo {
+    display: none;
+  }
+}
+
 .partners .main-content .nav {
+  max-width: 1440px !important;
   position: absolute;
   display: block;
   top: 40px;
   right: 80px;
+}
+
+@media (max-width: 650px) {
+  .partners .main-content .nav {
+    right: 40px;
+  }
 }
 
 .partners .main-content .nav .menu {
@@ -17822,7 +17842,20 @@ body.modal-open {
   cursor: pointer;
 }
 
-.partners .main-content .title {
+.partners .main-content .content {
+  text-align: center;
+  width: 100%;
+  margin: 10px 0;
+  position: relative;
+}
+
+@media (max-width: 850px) {
+  .partners .main-content .content {
+    padding: 0 15px 0 15px;
+  }
+}
+
+.partners .main-content .content .title {
   color: #262626;
   font-family: "Century Gothic";
   font-size: 45px;
@@ -17832,7 +17865,14 @@ body.modal-open {
   padding: 128px 15px 39px 15px;
 }
 
-.partners .main-content .textarea {
+@media (max-width: 850px) {
+  .partners .main-content .content .title {
+    font-size: 30px;
+    padding: 28px 15px 15px 15px;
+  }
+}
+
+.partners .main-content .content .textarea {
   max-width: 780px;
   color: #262626;
   font-family: "Century Gothic";
@@ -17844,51 +17884,63 @@ body.modal-open {
   padding: 0 15px 95px 15px;
 }
 
-.partners .main-content .wraper-img {
+@media (max-width: 850px) {
+  .partners .main-content .content .textarea {
+    padding: 0 15px 25px 15px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+@media (max-width: 650px) {
+  .partners .main-content .content .textarea {
+    padding: 0 10px 25px 10px;
+    font-weight: 300;
+    line-height: 20px;
+  }
+}
+
+.partners .main-content .content .wraper-img {
   width: 100%;
   max-width: 944px;
   margin: 0 auto;
   text-align: center;
 }
 
-.partners .main-content .wraper-img .wraper {
-  width: 20%;
+.partners .main-content .content .wraper-img .wraper {
+  width: 50%;
+  padding: 25px 0 25px 0;
   float: left;
 }
 
-.partners .main-content .wraper-img .wraper .icon {
-  text-align: center;
-  height: 100px;
-  vertical-align: middle;
+@media (max-width: 550px) {
+  .partners .main-content .content .wraper-img .wraper {
+    width: 100%;
+    padding: 20px 0 20px 0;
+  }
 }
 
-.partners .main-content .wraper-img .wraper .title-icon {
-  color: #262626;
-  font-family: "Century Gothic";
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 24px;
-  padding: 20px;
+.partners .main-content .content .wraper-img .wraper img {
+  width: 240px;
 }
 
-.partners .main-content .bottom-wrap {
-  position: absolute;
-  bottom: 0;
-  left: -10%;
-  width: 110%;
+.partners .main-content .content .wraper-img .wraper:nth-child(3) {
+  width: 100%;
+  display: block;
 }
 
-.partners .main-content .bottom-wrap .bottom-img {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  width: 110%;
+@media (max-width: 550px) {
+  .partners .main-content .content .wraper-img .wraper:nth-child(3) {
+    width: 100%;
+  }
 }
 
 .contact {
   margin: 0;
   padding: 0;
   height: 858px;
+  overflow: hidden;
+  min-height: 540px;
 }
 
 @media (max-width: 850px) {
@@ -17959,11 +18011,6 @@ body.modal-open {
 
 .contact .main-content .content {
   text-align: center;
-  top: 30%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   width: 100%;
   margin: 10px 0;
   position: relative;
@@ -17972,7 +18019,6 @@ body.modal-open {
 @media (max-width: 850px) {
   .contact .main-content .content {
     padding: 0 15px 0 15px;
-    top: 25%;
   }
 }
 
@@ -18063,12 +18109,14 @@ body.modal-open {
   line-height: 24px;
   font-weight: 400;
   padding: 0 20px;
+  display: inline-table;
   text-decoration: none;
 }
 
 @media (max-width: 650px) {
   .contact .main-content .content .wraper-img .wraper .description-icon {
     font-size: 18px;
+    padding: 10px;
     line-height: 18px;
   }
 }
@@ -18087,6 +18135,7 @@ body.modal-open {
   .contact .main-content .content .wraper-foo {
     width: auto;
     padding: 20px 0 20px 0;
+    margin: 20px 0 20px 0;
   }
 }
 
@@ -18122,6 +18171,7 @@ body.modal-open {
     font-size: 18px;
     width: 100%;
     line-height: 18px;
+    padding: 15px 0 50px 0;
   }
 }
 
@@ -18159,7 +18209,7 @@ body.modal-open {
 }
 
 .goal .main-content .logo {
-  max-width: 1440px !important;
+  max-width: 1440px;
   position: absolute;
   top: 40px;
   left: 40px;
@@ -18179,7 +18229,6 @@ body.modal-open {
 }
 
 .goal .main-content .nav {
-  max-width: 1440px !important;
   position: absolute;
   display: block;
   top: 40px;
@@ -18336,19 +18385,6 @@ body.modal-open {
   }
 }
 
-.goal .main-content .content .bottom-wrap {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-
-.goal .main-content .content .bottom-wrap .bottom-img {
-  position: relative;
-  bottom: 0;
-  left: 0;
-}
-
 .goal .ocean {
   height: 5%;
   width: 100%;
@@ -18386,6 +18422,12 @@ body.modal-open {
   position: absolute;
   top: 30px;
   right: 100px;
+}
+
+@media (max-width: 750px) {
+  .lang {
+    display: none;
+  }
 }
 
 .lang input {

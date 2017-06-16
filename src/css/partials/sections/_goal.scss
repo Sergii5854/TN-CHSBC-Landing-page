@@ -14,7 +14,6 @@
     margin-left: 0;
     margin: 0 auto;
     max-width: 1440px;
-
   }
   .main-content {
     max-width: 944px;
@@ -23,7 +22,7 @@
     left: 50%;
     height: 100vh;
     .logo {
-      max-width: 1440px !important;
+      max-width: 1440px ;
       position: absolute;
       top: 40px;
       left: 40px;
@@ -36,7 +35,6 @@
       }
     }
     .nav {
-      max-width: 1440px !important;
       position: absolute;
       display: block;
       top: 40px;
@@ -152,19 +150,6 @@
             }
 
           }
-        }
-      }
-      .bottom-wrap {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-
-        .bottom-img {
-          position: relative;
-          bottom: 0;
-          left: 0;
-
         }
       }
     }
