@@ -1,7 +1,7 @@
 {
-  "name": "Starter-theme",
+  "name": "brainside",
   "version": "1.0.0",
-  "description": "Starter theme",
+  "description": "brainside theme",
   "main": "index.js",
   "devDependencies": {
     "gulp": "^3.9.1",
@@ -23,8 +23,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "wordpress theme starter"
+    "brainside"
   ],
-  "author": "lemehovskiy",
+  "author": "nafalin",
   "license": "ISC"
 }

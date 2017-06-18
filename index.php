@@ -29,7 +29,7 @@
 
 </header>
 
-<section class="hero-video" data-anchor="home">
+<section id="hero-video" class="hero-video" data-anchor="home">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 main-content">
@@ -53,8 +53,8 @@
                     <div class="lang">
                         <div class="switch-container">
                             <div class="switch">
-                                <input type="radio" name="switch" id="switch--left" checked>
-                                <input type="radio" name="switch" id="switch--right">
+                                <input value="ukrain" type="radio" name="switch" id="switch--left" checked>
+                                <input value="english" type="radio" name="switch" id="switch--right">
 
                                 <label for="switch--left">UA</label>
                                 <label for="switch--right">EN</label>
@@ -62,9 +62,21 @@
                                 <span class="toggle"></span>
                             </div>
                         </div>
+
                     </div>
                     <div class="menu-wrap">
-                    <img class="menu" src=" img/Menu.png" alt="menu" type="image/png"/>
+
+                        <img class="menu toggle-bttn" src=" img/Menu.png" alt="menu" type="image/png"/>
+
+<!--                        <ul  id="navbar" class="menu-list navbar-collapse collapse menu-mainmenu">-->
+<!--                            <li data-a="hero-video">Головна</li>-->
+<!--                            <li data-a="project">Проект</li>-->
+<!--                            <li data-a="partners">Партнери</li>-->
+<!--                            <li data-a="goal">Мета</li>-->
+<!--                            <li data-a="who_we_are">Хто ми</li>-->
+<!--                            <li data-a="contact">Контакти</li>-->
+<!---->
+<!--                        </ul>-->
 
                     </div>
                 </div>
@@ -80,11 +92,11 @@
 
 
                     <div class="textarea anim ">
-                        <p class="text-ua">
+                        <p class="ukrain">
                             Безкоштовна система онлайн-навчання від Brainbasket Foundation для шкіл, коледжів та ВУЗів.
                             <br>Підпишіться на нас, щоб не пропустити запуск!
                         </p>
-                        <p class="text-eng">Free online training system from Brainbasket Foundation for schools, colleges and universities.
+                        <p class="english">Free online training system from Brainbasket Foundation for schools, colleges and universities.
                             <br>Follow us not to miss the launch!
                         </p>
 
@@ -108,7 +120,7 @@
     </div>
 </section>
 
-<section class="project" data-anchor="project">
+<section id="project" class="project" data-anchor="project">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 main-content">
@@ -171,7 +183,7 @@
         <div class="wave"></div>
     </div>
 </section>
-<section class="partners" data-anchor="partners">
+<section id="partners" class="partners" data-anchor="partners">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 main-content">
@@ -218,7 +230,7 @@
         </div>
     </div>
 </section>
-<section class="goal" data-anchor="goal">
+<section id="goal" class="goal" data-anchor="goal">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 main-content">
@@ -274,8 +286,8 @@
         <div class="wave-right"></div>
     </div>
 </section>
-<section class="who_we_are" data-anchor="who_we_are"></section>
-<section class="contact" data-anchor="contact">
+<section id="who_we_are" class="who_we_are" data-anchor="who_we_are"></section>
+<section id="contact" class="contact" data-anchor="contact">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 main-content">
@@ -311,6 +323,9 @@
                         <img src="img/contact/brainbasket-logo.png" class="icon-foo" alt="footer"> <p class="description-icon-foo">Фонд BrainBasket є некомерційною, неурядовою організацією, яка займається розвитком освіти в сфері ІТ. BrainBasket прагне зробити IT-галузь рушійною силою економічного зростання України шляхом поліпшення освітньої інфраструктури. Глобальною метою Фонду є сприяння у підготовці 100 000 нових IT-фахівців до 2020 року.
                         </p>
                     </div>
+
+                    <a class="top">top</a>
+
                 </div>
             </div>
         </div>

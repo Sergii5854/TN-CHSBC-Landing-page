@@ -1,8 +1,22 @@
-  .text-eng{
-    visibility: hidden;
+
+.lang{
+
+  .language {
+    position: absolute;
+    top: 5px; right: 5px;
+    padding: 20px;
+  }
+
+  .english {
+    display: inline;
+  }
+  .ukrain {
     display: none;
   }
-.lang{
+
+
+
+
     position: absolute;
     top: 30px;
     right: 100px;

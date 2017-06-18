@@ -25,24 +25,119 @@ function validateForm() {
     }
 }
 
-////lang swicher
-$(function(){
-$( document ).ready(function() {
-$(function() {
-    $( ".switch" ).click(function(){
-        $( ".text-on" ).switchClass( "text-on", "text-off", 10 );
-        $( ".text-off" ).switchClass( "text-off", "text-on", 10 );
-    });
+//////languech swicher
+
+$('.switch input').on('change', function() {
+   var selectedLanguage = $('input[name=switch]:checked', '.switch').val();
+
+    if ((selectedLanguage == 'english') || (selectedLanguage == 'ukrain')) {
+        $(".language select").val(selectedLanguage);
+        var sel = $(".language select").val(selectedLanguage);
+
+        if (selectedLanguage == 'english') {
+            $(".english").css("display", "inline");
+            $(".ukrain").css("display", "none");
+
+        }else if (selectedLanguage =='ukrain') {
+            $(".english").css("display", "none");
+            $(".ukrain").css("display", "inline");
+
+        }
+    }
+});
+
+/////menu
+var anchor
+$('#menu li').on('click', function() {
+    //alert($(this).attr('data-a'));
+    anchor= $(this).attr('data-a');
+    $("html, body").animate({ scrollTop: $("#" + anchor).offset().top }, 2000);
+    return false;
+});
+
+$('.topo').on('click', function() {
+    // if you want to other something
+    $("html, body").animate({ scrollTop: 0 }, 'slow');
+    // if you want to go to id or class and not the top of page use: $("#top").offset().top instead of 0
+    return false;
+});
+
+var selector = '.menu-wrap, .toggle-bttn, #navbar ';
+
+$(selector).on('click', function(){
+    $(selector).toggleClass("active");
 });
 
 
 
-$(function() {
-    $( "#language-toggle" ).click(function(){
-        $( ".text-on" ).switchClass( "text-on", "text-off", 10 );
-        $( ".text-off" ).switchClass( "text-off", "text-on", 10 );
-    });
-});
+// SET BACKGROUNDS FOR IPHONE
 
-});
-});
+
+// function setImageBackground() {
+//
+//     $('[data-background-image]').each(function () {
+//
+//         $(this).css('background-image', 'url(' + $(this).data('background-image') + ')');
+//     })
+// }
+//
+// if (isIphone) {
+//     setImageBackground();
+// }
+
+
+
+// AUTO PLAY VIDEO ON HOME
+
+
+
+// if (!isIphone) {
+//
+//     if ($('.background-video').length > 0) {
+//
+//         $('video').each(function () {
+//             $(this).get(0).play();
+//         })
+//     }
+// }
+
+
+
+//************************************
+// MAIN NAV
+//************************************
+
+
+function initDropdownToggle() {
+    $('.menu-wrap .menu-item-has-children').each(function () {
+
+        var $this = $(this);
+
+        var $sub_menu = $this.find('.menu');
+
+        var dropdown_btn = $this;
+
+
+        dropdown_btn.hover(
+            function () {
+                if (!$this.hasClass("open")) {
+                    TweenMax.set($sub_menu, {height: "auto", autoAlpha: 1});
+                    TweenMax.from($sub_menu, 0.5, {autoAlpha: 0, height: 0});
+
+                    $this.addClass("open");
+                }
+            }, function () {
+                if ($this.hasClass("open")) {
+                    TweenMax.to($sub_menu, 0.5, {
+                        height: 0, autoAlpha: 0
+                    });
+                    $this.removeClass("open");
+                }
+            }
+        );
+
+    })
+}
+
+initDropdownToggle();
+
