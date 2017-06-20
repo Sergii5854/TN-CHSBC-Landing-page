@@ -26,7 +26,7 @@ function validateForm() {
 }
 
 //////languech swicher
-
+$( document ).ready(function() {
 $('.switch input').on('change', function() {
    var selectedLanguage = $('input[name=switch]:checked', '.switch').val();
 
@@ -45,7 +45,7 @@ $('.switch input').on('change', function() {
         }
     }
 });
-
+});
 /////menu
 var anchor
 $('#menu li').on('click', function() {
@@ -103,41 +103,5 @@ $(selector).on('click', function(){
 
 
 
-//************************************
-// MAIN NAV
-//************************************
 
-
-function initDropdownToggle() {
-    $('.menu-wrap .menu-item-has-children').each(function () {
-
-        var $this = $(this);
-
-        var $sub_menu = $this.find('.menu');
-
-        var dropdown_btn = $this;
-
-
-        dropdown_btn.hover(
-            function () {
-                if (!$this.hasClass("open")) {
-                    TweenMax.set($sub_menu, {height: "auto", autoAlpha: 1});
-                    TweenMax.from($sub_menu, 0.5, {autoAlpha: 0, height: 0});
-
-                    $this.addClass("open");
-                }
-            }, function () {
-                if ($this.hasClass("open")) {
-                    TweenMax.to($sub_menu, 0.5, {
-                        height: 0, autoAlpha: 0
-                    });
-                    $this.removeClass("open");
-                }
-            }
-        );
-
-    })
-}
-
-initDropdownToggle();
 

@@ -207,6 +207,7 @@
         right: 35px;
         top: -1px;
         outline: none;
+        transition: 1s;
         @media (max-width: 650px) {
           margin-top: 20px ;
           position: relative;
@@ -214,6 +215,7 @@
           left: 0;
           max-width: 420px;
           width:80vw;
+
         }
 
         &:hover{

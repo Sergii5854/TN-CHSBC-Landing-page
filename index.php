@@ -286,7 +286,86 @@
         <div class="wave-right"></div>
     </div>
 </section>
-<section id="who_we_are" class="who_we_are" data-anchor="who_we_are"></section>
+<section id="who_we_are" class="who_we_are" data-anchor="who_we_are">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 main-content">
+                <img class="logo" src="img/project/logo.svg" alt="logo" type="image/png"/>
+
+                <div class="nav">
+                    <img class="menu" src=" img/menu.svg" alt="menu" type="image/png"/>
+                </div>
+                <div class="content">
+
+                    <h2 class="title">Хто ми</h2>
+<!--                    <div class="textarea anim ">-->
+<!--                        <p>-->
+<!--                            Партнери, які долучилися до розвитку нашого проекта-->
+<!--                        </p>-->
+<!--                    </div>-->
+
+                    <div class="wraper-img ">
+
+                        <div class="wraper">
+                            <img src="img/who_we_are/mask.png" class="icon" alt="we_are">
+                            <div class="neme" >О. Ткаченко </div>
+                            <div class="position">CEO, Founder</div>
+                        </div>
+                        <div class="wraper">
+                            <img src="img/who_we_are/tanya.png" class="icon" alt="we_are">
+                            <div class="neme" >Т. Коляда </div>
+                            <div class="position">Дизайнер</div>
+                        </div>
+                        <div class="wraper">
+                            <img src="img/who_we_are/dsc-0825.png" class="icon" alt="we_are">
+                            <div class="neme" >Д. Мельніков </div>
+                            <div class="position">Frontend</div>
+                        </div>
+                        <div class="wraper">
+                            <img src="img/who_we_are/sergii.png" class="icon" alt="we_are">
+                            <div class="neme" >С. Бондаренко </div>
+                            <div class="position">Frontend</div>
+                        </div>
+                        <div class="wraper">
+                            <img src="img/who_we_are/oleksandr.png" class="icon" alt="we_are">
+                            <div class="neme" >О. Низовий </div>
+                            <div class="position">Backend</div>
+                        </div>
+                        <div class="wraper">
+                            <img src="img/who_we_are/mask.png" class="icon" alt="we_are">
+                            <div class="neme" >Д. Малоземов </div>
+                            <div class="position">Backend</div>
+                        </div>
+                        <div class="wraper">
+                            <img src="img/who_we_are/mask.png" class="icon" alt="we_are">
+                            <div class="neme" >А. Галушка </div>
+                            <div class="position">Backend</div>
+                        </div>
+                        <div class="wraper">
+                            <img src="img/who_we_are/mask.png" class="icon" alt="we_are">
+                            <div class="neme" ">О. Бондар </div>
+                            <div class="position">Backend</div>
+                        </div>
+                        <div class="wraper">
+                            <img src="img/who_we_are/mask.png" class="icon" alt="we_are">
+                            <div class="neme" >О. Хандусь </div>
+                            <div class="position">QA</div>
+                        </div>
+
+
+
+
+
+                    </div >
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
 <section id="contact" class="contact" data-anchor="contact">
     <div class="container">
         <div class="row">
