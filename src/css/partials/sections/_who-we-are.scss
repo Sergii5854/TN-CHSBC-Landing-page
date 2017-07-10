@@ -105,16 +105,75 @@
         margin: 0 auto;
         text-align: center;
         .wraper {
-          padding: 25px 0 25px 0;
+          padding: 5px 0 5px 0;
           display: inline-block;
           float: left;
-          margin: 0px 45px;
+          margin: 0px 20px 15px;
+          position: relative;
+          min-width: 140px;
           @media (max-width: 550px) {
             width: 100%;
             padding: 20px 0 20px 0;
+            margin: 0;
           }
+
+          $anime-time: 8s;
+          $box-size: 137px;
+          $clip-distance: .05;
+          $clip-size: $box-size * (1 + $clip-distance * 2);
+          $path-width: 2px;
+          $main-color: #ffeb3b;
+
+
+          %full-fill {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+          }
+
+          .bb {
+            @extend %full-fill;
+            width: $box-size;
+            height: $box-size;
+            margin: auto;
+            color: $main-color;
+
+            &::before,
+            &::after {
+              @extend %full-fill;
+              content: '';
+              z-index: -1;
+              margin: -1 * $clip-distance * 100%;
+              box-shadow: inset 0 0 0 $path-width;
+              animation: clipMe $anime-time linear infinite;
+              border-radius: 515px;
+            }
+
+            &::before {
+              animation-delay: $anime-time * -.5;
+            }
+
+            // for debug
+            &:hover {
+              &::after,
+              &::before {
+                background-color: rgba(#f00, .3);
+              }
+            }
+
+          }
+
+
           img{
             width: 131px;
+            transform: scale(1);
+            transition: .2s;
+            cursor: pointer;
+            &:hover{
+              transform: scale(1.05);
+            }
             :before{
               position: absolute;
               content: "";
@@ -122,6 +181,7 @@
               width: 30px;
               color: #fbc233;
               border: 5px solid #fbc233;
+
             }
           }
           .neme {
@@ -130,7 +190,11 @@
             font-size: 18px;
             font-weight: 700;
             line-height: 20px;
-            margin-top: 10px ;
+            position: relative;
+            transform: translate(-50%);
+            left: 50%;
+
+            margin-top: 200px;
           }
           .position{
 
@@ -140,19 +204,26 @@
           }
         }
 
-        //.wraper:nth-child(5){
-        //  width: 100%;
-        //  display: block;
-        //  @media (max-width: 550px) {
-        //    width: 100%;
-        //
-        //  }
-        //}
-
 
       }
 
 
     }
   }
+}
+
+
+
+@keyframes clipMe {
+  0%, 100% {clip: rect(0px, $clip-size, $path-width, 0px); }
+  25% {clip: rect(0px, $path-width, $clip-size, 0px); }
+  50% {clip: rect($clip-size - $path-width, $clip-size, $clip-size, 0px); }
+  75% {clip: rect(0px, $clip-size, $clip-size, $clip-size - $path-width); }
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }

@@ -114,6 +114,15 @@
           }
           img{
             width: 240px;
+            filter: grayscale(100%);
+            filter: gray;
+            transform: scale(1);
+            transition: .2s;
+            cursor: pointer;
+            &:hover {
+              transform: scale(1.1);
+              filter:none;
+            }
           }
           }
 
