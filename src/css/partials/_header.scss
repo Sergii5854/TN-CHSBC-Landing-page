@@ -1,0 +1,230 @@
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  background: #00adee;
+  @media (max-width: 792px) {
+    position: relative;
+  }
+  &.fixed {
+    @media ( max-width: 991px) {
+      #navbar {
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        opacity: .9;
+        top: 0;
+      }
+      .animate-burger {
+        display: inline-block;
+        position: relative;
+      }
+
+    }
+  }
+
+  .container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 45px;
+    @media (max-width: 767px) {
+      padding: 0 30px;
+    }
+  }
+}
+
+#navbar {
+  position: relative;
+  height: auto;
+  right: 50px;
+
+
+  @media (min-width: 992px) {
+    height: auto !important;
+  }
+
+  @media (max-width: 991px) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #00adee;
+    width: 100%;
+    height:100vh;
+
+    z-index: 3;
+    opacity: .9;
+  }
+}
+
+
+.navbar-head {
+  padding-bottom: 10px;
+  padding-top: 15px;
+
+  @media (max-width: 991px) {
+    width: 100%;
+  }
+
+
+
+  .navbar-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 0;
+    //   float: right;
+    //top: 10px;
+    position: relative;
+    float: right;
+
+    @media (max-width: 991px) {
+      display: block;
+    }
+
+    .animate-burger {
+      display: inline-block;
+      position: relative;
+      width: 31px;
+      height: 21px;
+      Z-INDEX: 999;
+      transform: rotate(90deg);
+      span {
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        left: 0;
+        transition: transform .5s, opacity .6s;
+        border-radius: 40px;
+      }
+
+      .top {
+        top: 0;
+        background: white;
+      }
+      .middle {
+        top: 50%;
+        margin-top: -1px;
+        background: #ffd200;
+        width:20px;
+        &:after{
+          content: ".";
+          position: absolute;
+          top: -27px;
+          /* bottom: 0px; */
+          right: -13px;
+          font-size: 35px;
+          color: #ffd200;
+        }
+
+      }
+      .bottom {
+        bottom: 0;
+        background: white;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      .animate-burger {
+        .top {
+          transform: translateY(-2px);
+        }
+        .bottom {
+          transform: translateY(2px);
+        }
+      }
+    }
+    &[aria-expanded="true"] {
+      .animate-burger {
+        .top {
+          transform: translateY(8px) rotate(-45deg);
+        }
+        .middle {
+          transform: translateX(10px);
+          opacity: 0;
+        }
+        .bottom {
+          transform: translateY(-9px) rotate(45deg);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  header .navbar-collapse {
+    display: block;
+  }
+}
+
+.nav {
+  text-align: center;
+  @media (max-width: 991px) {
+    padding: 12px 0;
+
+    position: relative;
+    top: 45%;
+    left: 0;
+    transform: translateY(-50%);
+    width: inherit;
+  }
+
+  > .menu-item {
+    display: inline-block;
+    position: relative;
+
+    @media (max-width: 991px) {
+      display: block;
+    }
+
+    > a {
+      font-family: "SFUI Light";
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 30px;
+      color: #ffffff;
+      padding: 0px 12px;
+      display: inline-block;
+      &:after {
+        content: '';
+        width: calc(100% - 20px);
+        bottom: -4px;
+        left: 50%;
+        transform: translateX(-50%) scaleX(0);
+        height: 3px;
+        background: #78def8;
+        position: absolute;
+        transform-origin: center;
+        transition: .5s;
+        max-width: 100px;
+      }
+      @media (max-width: 991px) {
+        color: #fff;
+        padding: 10px 12px;
+        font-size: 18px;
+      }
+
+      &:hover {
+        &:after {
+          transform: translateX(-50%) scaleX(1);
+          background-color: transparent;
+
+        }
+      }
+
+    }
+  }
+  .menu-item {
+    a {
+
+      &:hover:after {
+        transform: translateX(-50%) scaleX(1);
+
+
+      }
+    }
+  }
+}

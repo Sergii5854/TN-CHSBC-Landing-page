@@ -20,14 +20,41 @@
 
 </head>
 <body>
+<header class="header">
 
-<header>
+    <div class="container-header">
+        <div class="navbar-head">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" id="navBurger">
+                <div class="animate-burger">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
 
-    <div class="container">
+                </div>
+            </button>
+
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+
+                <ul class='nav navbar-nav' id="menu-headermenu">
+
+
+                    <li class="menu-item"><a href="#home">Home</a></li>
+                    <li class="menu-item"><a href="#project">Project</a></li>
+                    <li class="menu-item"><a href="#partners">Partners</a></li>
+                    <li class="menu-item"><a href="#goal">Goal</a></li>
+                    <li class="menu-item"><a href="#who_we_are">Who we are</a></li>
+                    <li class="menu-item"><a href="#contact">Contact</a></li>
+
+                </ul>
+
+        </div>
 
     </div>
 
 </header>
+
+
 
 <section id="hero-video" class="hero-video" data-anchor="home">
     <div class="container">
@@ -64,21 +91,10 @@
                         </div>
 
                     </div>
-                    <div class="menu-wrap">
-
-                        <img class="menu toggle-bttn" src=" img/Menu.png" alt="menu" type="image/png"/>
-
-                        <!--                        <ul  id="navbar" class="menu-list navbar-collapse collapse menu-mainmenu">-->
-                        <!--                            <li data-a="hero-video">Головна</li>-->
-                        <!--                            <li data-a="project">Проект</li>-->
-                        <!--                            <li data-a="partners">Партнери</li>-->
-                        <!--                            <li data-a="goal">Мета</li>-->
-                        <!--                            <li data-a="who_we_are">Хто ми</li>-->
-                        <!--                            <li data-a="contact">Контакти</li>-->
-                        <!---->
-                        <!--                        </ul>-->
-
-                    </div>
+<!--                    <div class="menu-wrap">-->
+<!--                        <img class="menu toggle-bttn" src=" img/Menu.png" alt="menu" type="image/png"/>               -->
+<!---->
+<!--                    </div>-->
                 </div>
                 <video autoplay="" loop="" muted="" class="bgvideo">
 
@@ -128,9 +144,9 @@
                 <div class="header-section">
                     <img class="logo" src="img/project/logo.svg" alt="logo" type="image/png"/>
 
-                    <div class="nav">
-                        <img class="menu" src=" img/Menu.svg" alt="menu" type="image/png"/>
-                    </div>
+<!--                    <div class="nav">-->
+<!--                        <img class="menu" src=" img/Menu.svg" alt="menu" type="image/png"/>-->
+<!--                    </div>-->
                 </div>
                 <div class="content">
                     <h2 class="title">Проект</h2>
@@ -187,9 +203,9 @@
             <div class="col-lg-12 main-content">
                 <img class="logo" src="img/project/logo.svg" alt="logo" type="image/png"/>
 
-                <div class="nav">
-                    <img class="menu" src=" img/menu.svg" alt="menu" type="image/png"/>
-                </div>
+<!--                <div class="nav">-->
+<!--                    <img class="menu" src=" img/menu.svg" alt="menu" type="image/png"/>-->
+<!--                </div>-->
                 <div class="content">
 
                     <h2 class="title">Партнери</h2>
@@ -244,10 +260,10 @@
             <div class="col-lg-12 main-content">
 
                 <img class="logo" src="img/project/logo.svg" alt="logo" type="image/png"/>
-
-                <div class="nav">
-                    <img class="menu" src=" img/Menu.png" alt="menu" type="image/png"/>
-                </div>
+<!---->
+<!--                <div class="nav">-->
+<!--                    <img class="menu" src=" img/Menu.png" alt="menu" type="image/png"/>-->
+<!--                </div>-->
                 <div class="content">
 
                     <h2 class="title">Мета</h2>
@@ -302,9 +318,9 @@
             <div class="col-lg-12 main-content">
                 <img class="logo" src="img/project/logo.svg" alt="logo" type="image/png"/>
 
-                <div class="nav">
-                    <img class="menu" src=" img/menu.svg" alt="menu" type="image/png"/>
-                </div>
+<!--                <div class="nav">-->
+<!--                    <img class="menu" src=" img/menu.svg" alt="menu" type="image/png"/>-->
+<!--                </div>-->
                 <div class="content">
 
                     <h2 class="title">Хто ми</h2>
@@ -393,9 +409,9 @@
 
                 <img class="logo" src="img/project/logo.svg" alt="logo" type="image/png"/>
 
-                <div class="nav">
-                    <img class="menu" src=" img/Menu.png" alt="menu" type="image/png"/>
-                </div>
+<!--                <div class="nav">-->
+<!--                    <img class="menu" src=" img/Menu.png" alt="menu" type="image/png"/>-->
+<!--                </div>-->
 
 
                 <div class="content">

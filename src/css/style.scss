@@ -1,7 +1,7 @@
 @import "vendor/bourbon/bourbon";
 
-@import "vendor/Bootstrap/bootstrap.css";
-@import "vendor/Bootstrap/bootstrap.min.css";
+//@import "vendor/Bootstrap/bootstrap.css";
+//@import "vendor/Bootstrap/bootstrap.min.css";
 
 @import "partials/reset";
 
@@ -14,7 +14,7 @@
 
 @import "partials/fonts";
 
-
+@import "partials/header";
 @import "partials/footer";
 @import "partials/general";
 @import "partials/collapse";

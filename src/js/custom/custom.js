@@ -68,6 +68,46 @@ $(selector).on('click', function(){
     $(selector).toggleClass("active");
 });
 
+//************************************
+// fixed menu when scroll
+//************************************
+
+
+$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > 10) {
+        $('.header').addClass('fixed');
+    } else {
+        $('.header').removeClass('fixed');
+    }
+});
+
+
+/////menu
+
+var anchor;
+$('#menu-headermenu li a').on('click', function () {
+    //  alert($("#navBurger").attr('aria-expanded'));
+    anchor = $(this).attr('href');
+    $("html, body").animate({scrollTop: $(anchor).offset().top}, 1500);
+
+    //landing page
+    var ariaEexpandedNavBurger = $("#navBurger").attr('aria-expanded');
+    var ariaEexpandedNavbar = $("#navbar").attr('aria-expanded');
+    if (ariaEexpandedNavBurger == "true" || ariaEexpandedNavbar == "true") {
+        //console.log("YES");
+
+        $("#navBurger").attr('class', "collapsed").attr('class', "navbar-toggle").attr('aria-expanded', "false");
+        $("#navbar").attr('class', "navbar-collapse").attr('class', "collapse").attr('aria-expanded', "false");
+
+    } else {
+        // console.log("no")
+    }
+
+
+    return false;
+
+
+});
 
 
 // SET BACKGROUNDS FOR IPHONE

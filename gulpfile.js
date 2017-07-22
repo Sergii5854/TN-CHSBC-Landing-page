@@ -45,7 +45,7 @@ gulp.task('vendorsJs', function() {
     return streamqueue({ objectMode: true },
         gulp.src('./src/js/vendor/jquery/*.js'),
         gulp.src('./src/js/vendor/TweenMax.min.js'),
-        gulp.src('./src/js/vendor/bootstrap.js'),
+        //gulp.src('./src/js/vendor/bootstrap.js'),
         gulp.src('./src/js/vendor/collapse.js')
     )
 

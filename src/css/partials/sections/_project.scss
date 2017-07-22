@@ -114,6 +114,10 @@ min-height: 540px;
             text-align: center;
             height: 100px;
             vertical-align: middle;
+            transition: .5s;
+            &:hover{
+              transform: scale(1.1);
+            }
             @media (max-width: 850px) {
               max-width: 50%;
             }
